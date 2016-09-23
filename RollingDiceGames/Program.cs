@@ -17,7 +17,12 @@ namespace RollingDiceGames
         }
         public static void Fibonacci(int a, int b, int count,params int[] num)
         {
-            Console.WriteLine(a);
+            for (int i = 0; i < num.Length;i++)
+            {
+                if(count == num[i])
+                    Console.WriteLine("Generated value={0} Sum={1} Iteration={2}",num[i],a,count);
+            }
+                
             if (count < 30)
                 Fibonacci(b, a + b, count + 1,num);
         }
