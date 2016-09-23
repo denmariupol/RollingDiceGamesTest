@@ -24,20 +24,39 @@ namespace RollingDiceGames
 
             return numbers;
         }
-        public void Check(List<int> list)
+        public int Check(List<int> list)
         {
-            int firstNum , secondNum;
-
-            for(int i = 0;i < list.Count;i++)
+            int nonSawElem = 0;
+            for (int i = 1;i < list.Count - 1;i++)
             {
-                firstNum = list[i];
-                secondNum = list[i + 1];
-                if (secondNum > firstNum)
-                {
-
-                }
+                if (i % 2 == 0)
+                    nonSawElem = CheckEven(list, i);
+                else
+                    nonSawElem = CheckOdd(list, i);
+                if (nonSawElem != 0)
+                    break;
             }
+            return nonSawElem;  
         }
-        
+
+        int CheckEven(List<int> list,int i)
+        {
+            if (list[i] > list[i - 1] && list[i] > list[i + 1])
+                return 0;
+            else if (list[i] < list[i - 1] && list[i] < list[i + 1])
+                return 0;
+            else
+                return list[i];
+        }
+
+        int CheckOdd(List<int> list,int i)
+        {
+            if (list[i] > list[i - 1] && list[i] > list[i + 1])
+                return 0;
+            else if (list[i] < list[i - 1] && list[i] < list[i + 1])
+                return 0;
+            else
+                return list[i];        
+        }
     }
 }

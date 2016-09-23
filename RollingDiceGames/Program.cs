@@ -20,13 +20,14 @@ namespace RollingDiceGames
 
             foreach (List<int> n in set)
             {
-                numbers.Check(n);
+                 
+                int nonSawElem = numbers.Check(n);
                 Console.Write("Length={0} Set=", n.Count);
                 foreach (int num in n)
                 {
                     Console.Write(num + " ");
                 }
-                
+                Console.Write("Non Saw Elem = " + nonSawElem);
                 Console.WriteLine();
             }
             Console.ReadLine();
