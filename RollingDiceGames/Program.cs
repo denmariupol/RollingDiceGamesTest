@@ -26,7 +26,7 @@ namespace RollingDiceGames
                 {
                     Console.Write(num + " ");
                 }
-                Console.Write("Count=" + numbers.Count);
+                
                 Console.WriteLine();
             }
             Console.ReadLine();

@@ -8,16 +8,11 @@ namespace RollingDiceGames
 {
     class Numbers
     {
-        private int count = 0;
-        public int Count
-        {
-            get { return count; }
-            set { count = value; }
-        }
+
         Random rand = new Random();
         int GenerateLength()
         {
-            return rand.Next(2, 5);
+            return rand.Next(3, 10);
         }
         public List<int> GenerateNumbers()
         {
@@ -25,50 +20,24 @@ namespace RollingDiceGames
             int length = GenerateLength();
 
             for (int i = 0; i < length; i++)
-                numbers.Add(rand.Next(1, 100));
+                numbers.Add(rand.Next(1, 10));
 
-            numbers.Add(0);
             return numbers;
         }
         public void Check(List<int> list)
         {
-            int increase, decrease;
-            increase = Increase(list);
-            decrease = Decrease(list);
-            if (increase == 1 || decrease == 1)
-                count++;
-        }
-        int Increase(List<int> list)
-        {
-            int inc = list[0];
-            for (int i = 1; i < list.Count - 1; i++)
+            int firstNum , secondNum;
+
+            for(int i = 0;i < list.Count;i++)
             {
-                if (list[i] > inc)
+                firstNum = list[i];
+                secondNum = list[i + 1];
+                if (secondNum > firstNum)
                 {
-                    inc = list[i];
-                    if (i == list.Count - 2)
-                        return 1;
+
                 }
-                else
-                    return 0;
             }
-            return 1;
         }
-        int Decrease(List<int> list)
-        {
-            int dec = list[0];
-            for (int i = 1; i < list.Count - 1; i++)
-            {
-                if (list[i] < dec)
-                {
-                    dec = list[i];
-                    if (i == list.Count - 2)
-                        return 1;
-                }
-                else
-                    return 0;
-            }
-            return 1;
-        }
+        
     }
 }
