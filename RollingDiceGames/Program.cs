@@ -15,9 +15,9 @@ namespace RollingDiceGames
             Point C = new Point(-9.29f, 0.34f);
             Point D = new Point(-3.68f, -5.72f);
             Perimetr perimetr = new Perimetr();
-            perimetr.Sum(A, B, C);
-            perimetr.Sum(A, B, D);
-            perimetr.Sum(A, C, D);
+            perimetr.GetPerimetr(A, B, C);
+            perimetr.GetPerimetr(A, B, D);
+            perimetr.GetPerimetr(A, C, D);
             
             Console.ReadLine();
         }

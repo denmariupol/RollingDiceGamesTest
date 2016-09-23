@@ -8,7 +8,7 @@ namespace RollingDiceGames
 {
     class Perimetr
     {
-        public void Sum(params Point[] points)
+        public void GetPerimetr(params Point[] points)
         {
             double sum = 0;
             for (int i = 0; i < points.Length - 1 ;i++ )
