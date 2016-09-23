@@ -4,3 +4,9 @@ C:\Users\Ingener_mobil\Documents\Visual Studio 2013\Projects\RollingDiceGames\Ro
 C:\Users\Ingener_mobil\Documents\Visual Studio 2013\Projects\RollingDiceGames\RollingDiceGames\obj\Debug\RollingDiceGames.csprojResolveAssemblyReference.cache
 C:\Users\Ingener_mobil\Documents\Visual Studio 2013\Projects\RollingDiceGames\RollingDiceGames\obj\Debug\RollingDiceGames.exe
 C:\Users\Ingener_mobil\Documents\Visual Studio 2013\Projects\RollingDiceGames\RollingDiceGames\obj\Debug\RollingDiceGames.pdb
+D:\C#\RollingDiceGmesTest\RollingDiceGamesTest\RollingDiceGames\bin\Debug\RollingDiceGames.exe.config
+D:\C#\RollingDiceGmesTest\RollingDiceGamesTest\RollingDiceGames\bin\Debug\RollingDiceGames.exe
+D:\C#\RollingDiceGmesTest\RollingDiceGamesTest\RollingDiceGames\bin\Debug\RollingDiceGames.pdb
+D:\C#\RollingDiceGmesTest\RollingDiceGamesTest\RollingDiceGames\obj\Debug\RollingDiceGames.csprojResolveAssemblyReference.cache
+D:\C#\RollingDiceGmesTest\RollingDiceGamesTest\RollingDiceGames\obj\Debug\RollingDiceGames.exe
+D:\C#\RollingDiceGmesTest\RollingDiceGamesTest\RollingDiceGames\obj\Debug\RollingDiceGames.pdb
