@@ -16,7 +16,7 @@ namespace RollingDiceGames
             set { count = value; }
         }
         Random rand = new Random();
-        public int GenerateLength()
+        int GenerateLength()
         {         
             return rand.Next(2, 5);
         }
