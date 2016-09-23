@@ -29,34 +29,26 @@ namespace RollingDiceGames
             int nonSawElem = 0;
             for (int i = 1;i < list.Count - 1;i++)
             {
-                if (i % 2 == 0)
-                    nonSawElem = CheckEven(list, i);
-                else
-                    nonSawElem = CheckOdd(list, i);
+                nonSawElem = CheckElem(list, i);
+              
                 if (nonSawElem != 0)
                     break;
             }
             return nonSawElem;  
         }
 
-        int CheckEven(List<int> list,int i)
+        int CheckElem(List<int> list,int i)
         {
             if (list[i] > list[i - 1] && list[i] > list[i + 1])
                 return 0;
             else if (list[i] < list[i - 1] && list[i] < list[i + 1])
                 return 0;
-            else
+            else if (list[i] == list[i - 1] || list[i] == list[i + 1])
                 return list[i];
+            else
+                return list[i + 1];
         }
 
-        int CheckOdd(List<int> list,int i)
-        {
-            if (list[i] > list[i - 1] && list[i] > list[i + 1])
-                return 0;
-            else if (list[i] < list[i - 1] && list[i] < list[i + 1])
-                return 0;
-            else
-                return list[i];        
-        }
+        
     }
 }
