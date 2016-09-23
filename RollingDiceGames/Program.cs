@@ -27,7 +27,7 @@ namespace RollingDiceGames
                 {
                     Console.Write(num + " ");
                 }
-                Console.Write("Non Saw Elem = " + nonSawElem);
+                Console.Write("Non Sawtooth Element = " + nonSawElem);
                 Console.WriteLine();
             }
             Console.ReadLine();

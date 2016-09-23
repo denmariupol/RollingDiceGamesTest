@@ -9,7 +9,7 @@ namespace RollingDiceGames
     class Numbers
     {
 
-        Random rand = new Random();
+        static Random rand = new Random();
         int GenerateLength()
         {
             return rand.Next(3, 10);
